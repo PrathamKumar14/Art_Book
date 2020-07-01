@@ -172,3 +172,7 @@ a {
   width: 100px;
   height: auto;
 }
+
+video:focus {
+  outline: none;
+}
