@@ -1,52 +1,57 @@
 body {
-  padding: 0;
   margin: 0;
+  padding: 0;
   background: black;
-  overflow: hidden;
 }
 
 .container {
-  height: 100vh;
-  width: 100vw;
-  background-color: black;
-  color: black;
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
-}
-
-.wrapper {
-  perspective: 800px;
-  -webkit-perspective: 800px;
+  height: 510px;
+  width: auto;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  padding: 5px;
+  perspective: 1500px;
 }
 
 .flap {
-  background-color: #fff;
-  color: black;
-  height: 360px;
-  width: 228px;
-  position: relative;
-  top: 240px;
-  /* height: 80vh;
-  width: 40vw; */
-  font-size: 20px;
-  font-family: "Poppins", sans-serif;
-  border-radius: 10px 30px 30px 10px;
-  border-left: 4px dotted red;
-  box-shadow: 2px 2px 6px #e1e1e1;
-  padding: 20px;
-  padding-top: 40px;
+  box-sizing: border-box;
+  height: 500px;
+  width: 400px;
+  background: white;
   text-align: center;
-  margin-top: 1px;
+  border-radius: 10px 30px 30px 10px;
+  border: 5px solid red;
+  border-left: 10px dotted black;
   transform-origin: left;
   transition: 2s;
+  transform-style: preserve-3d;
+  box-shadow: 1px 1px 10px 1px #383838;
 }
 
-.flap1 {
+.flap:nth-child(1) {
   position: relative;
-  top: -181px;
+  top: 0;
+  z-index: 4;
+  border: none;
+  border-left: 10px dotted black;
+}
+
+.flap:nth-child(2) {
+  position: relative;
+  top: -500px;
+  z-index: 3;
+}
+
+.flap:nth-child(3) {
+  position: relative;
+  top: -1000px;
+  z-index: 2;
+}
+
+.flap:nth-child(4) {
+  position: relative;
+  top: -1500px;
+  z-index: 1;
 }
