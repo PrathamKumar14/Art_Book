@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: black;
+  background: #120136;
 }
 
 .container {
@@ -16,25 +16,31 @@ body {
 }
 
 .flap {
+  font-family: 'Poppins', sans-serif;
   box-sizing: border-box;
   height: 500px;
   width: 400px;
-  background: white;
+  background: #e79cc2;
   text-align: center;
-  border-radius: 10px 30px 30px 10px;
+  border-radius: 10px 50px 50px 10px;
   border: 5px solid red;
   border-left: 10px dotted black;
   transform-origin: left;
   transition: 2s;
   transform-style: preserve-3d;
   box-shadow: 1px 1px 10px 1px #383838;
+  cursor: pointer;
 }
 
 .flap:nth-child(1) {
+  font-family: 'Notable', sans-serif;
+  background: #e79cc2;
   position: relative;
   top: 0;
   z-index: 4;
-  border: none;
+  border-top: 4px solid #1d1b38;
+  border-right: 4px solid #1d1b38;
+  border-bottom: 4px solid #1d1b38;
   border-left: 10px dotted black;
 }
 
@@ -54,4 +60,63 @@ body {
   position: relative;
   top: -1500px;
   z-index: 1;
+}
+
+.my-name {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  color: #142850;
+  letter-spacing: 4px;
+}
+
+hr {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  top: 70px;
+  border: 10px dotted #1d1b38;
+  border-bottom: none;
+  width: 20%;
+}
+
+.intro {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  right: -20px;
+  letter-spacing: 3px;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
+.click-to-open {
+  position: absolute;
+  bottom: 0;
+  right: 6px;
+}
+
+h2 {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+img {
+  box-sizing: border-box;
+  border: 2px solid black;
+  position: absolute;
+  top: 100px;
+  left: 0;
+  width: 380px;
+  height: auto;
+  border-radius: 50px;
+}
+
+a {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%);
 }
