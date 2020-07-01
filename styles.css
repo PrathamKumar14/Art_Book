@@ -39,7 +39,7 @@ body {
   background: #e79cc2;
   position: relative;
   top: 0;
-  z-index: 4;
+  z-index: 6;
   border: 4px solid #1d1b38;
   border-left: 10px dotted black;
 }
@@ -47,18 +47,30 @@ body {
 .flap:nth-child(2) {
   position: relative;
   top: -500px;
-  z-index: 3;
+  z-index: 5;
 }
 
 .flap:nth-child(3) {
   position: relative;
   top: -1000px;
-  z-index: 2;
+  z-index: 4;
 }
 
 .flap:nth-child(4) {
   position: relative;
   top: -1500px;
+  z-index: 3;
+}
+
+.flap:nth-child(5) {
+  position: relative;
+  top: -2000px;
+  z-index: 2;
+}
+
+.flap:nth-child(6) {
+  position: relative;
+  top: -2500px;
   z-index: 1;
 }
 
